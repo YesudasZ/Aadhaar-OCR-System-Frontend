@@ -20,7 +20,7 @@ const ExtractedDataDisplay = ({ extractedData }) => (
           <div>
             <div className="text-sm text-gray-500">Date of birth</div>
             <div className="mt-1 border-b border-gray-300 pb-1">
-              {extractedData.dateOfBirth || "Not found"}
+              {extractedData.dob || "Not found"}
             </div>
           </div>
           <div>

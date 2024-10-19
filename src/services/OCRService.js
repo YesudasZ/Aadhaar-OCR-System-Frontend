@@ -22,8 +22,9 @@ export const convertToBase64 = (file) => {
 };
 
 export const processAadhaarOCR = async (frontImage, backImage) => {
-  const response = await fetch("http://localhost:5000/api/ocr", {
+  const response = await fetch("https://aadhaar-ocr-system-backend.onrender.com/api/ocr", {
     method: "POST",
+    withCredentials: true,
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
       frontImage,
